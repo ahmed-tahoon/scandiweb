@@ -61,7 +61,7 @@ const ProductCard = ({ product, onToggleSelect, selectedProducts }) => {
           <div className="flex items-center me-4">
             <input
               checked={isSelected}
-              id={`checkbox-${product.id}"`}
+              id={`delete-checkbox`}
               type="checkbox"
               value=""
               className="w-6 h-6 text-red-600 bg-red-100 border-red-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
