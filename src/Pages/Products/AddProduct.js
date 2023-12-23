@@ -289,11 +289,11 @@ const AddProduct = ({ productList, setProductList }) => {
               onChange={handleInputChange}
               required
             />
-            <span className="text-xs text-gray-500">
+            <span  id="Invalid_Input" className="text-xs text-gray-500">
               Please enter the weight in kilograms
             </span>
             {fieldErrors.weight && (
-              <p className="text-red-500">{fieldErrors.weight}</p>
+              <p id="Invalid_Input" className="text-red-500">{fieldErrors.weight}</p>
             )}
           </div>
         )}
@@ -313,10 +313,10 @@ const AddProduct = ({ productList, setProductList }) => {
               required
             />
             {fieldErrors.height && (
-              <p className="text-red-500">{fieldErrors.weigheightht}</p>
+              <p id="Invalid_Input" className="text-red-500">{fieldErrors.weigheightht}</p>
             )}
             <label htmlFor="width" className="block font-bold mb-1">
-              Width<span className="text-red-500"> *</span>
+              Width<span  className="text-red-500"> *</span>
             </label>
             <input
               type="number"
@@ -332,7 +332,7 @@ const AddProduct = ({ productList, setProductList }) => {
               <p className="text-red-500">{fieldErrors.width}</p>
             )}
             <label htmlFor="length" className="block font-bold mb-1">
-              Length<span className="text-red-500"> *</span>
+              Length<span id="Invalid_Input" className="text-red-500"> *</span>
             </label>
             <input
               type="number"
@@ -348,7 +348,7 @@ const AddProduct = ({ productList, setProductList }) => {
               Please enter the dimensions in centimeters
             </span>
             {fieldErrors.length && (
-              <p className="text-red-500">{fieldErrors.length}</p>
+              <p id="Invalid_Input" className="text-red-500">{fieldErrors.length}</p>
             )}
           </div>
         )}
