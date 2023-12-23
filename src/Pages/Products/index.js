@@ -52,7 +52,7 @@ const Products = () => {
 
   return (
     <React.Fragment>
-      <section className="container mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0 min-h-screen">
+      <section className="container mx-auto p-10 md:py-12 md:p-8  min-h-screen px-8">
         <TopButtons
           handleDeleteSelected={handleDeleteSelected}
           selectedProducts={selectedProducts}
