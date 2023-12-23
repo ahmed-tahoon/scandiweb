@@ -7,12 +7,7 @@ import {
 } from "../../helpers/fakebackend_helper";
 
 const Products = () => {
-  const [products, setProducts] = useState([
-    {
-      id: 1,
-      name: "wating for data",
-    },
-  ]);
+  const [products, setProducts] = useState([]);
 
   const getProducts = async () => {
     const res = await getProductsAPI();
