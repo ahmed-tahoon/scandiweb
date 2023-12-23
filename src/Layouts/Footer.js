@@ -18,33 +18,10 @@ const Footer = () => {
                 href="https://scandiweb.com/terms-of-service"
                 class="hover:underline me-4 md:me-6"
               >
-                Terms of Service
+                scandiweb test assignment
               </a>
             </li>
-            <li>
-              <a
-                href="https://scandiweb.com/privacy-policy"
-                class="hover:underline me-4 md:me-6"
-              >
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://scandiweb.com/services/magento-demo"
-                class="hover:underline me-4 md:me-6"
-              >
-                Magento 2 Demo Store
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://scandiweb.com/cookie-policy"
-                class="hover:underline"
-              >
-                Manage Cookies
-              </a>
-            </li>
+           
           </ul>
         </div>
       </footer>
