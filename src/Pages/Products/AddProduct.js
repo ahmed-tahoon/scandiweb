@@ -131,6 +131,7 @@ const AddProduct = ({ productList, setProductList }) => {
     <div className="container mx-auto p-4 min-h-screen">
       {error && (
         <div
+          id="Invalid_Input"
           class="flex items-center  p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800"
           role="alert"
         >
@@ -181,7 +182,11 @@ const AddProduct = ({ productList, setProductList }) => {
             onChange={handleInputChange}
             required
           />
-          {fieldErrors.sku && <p className="text-red-500">{fieldErrors.sku}</p>}
+          {fieldErrors.sku && (
+            <p id="Invalid_Input" className="text-red-500">
+              {fieldErrors.sku}
+            </p>
+          )}
         </div>
         <div className="mb-4">
           <label htmlFor="name" className="block font-bold mb-1">
@@ -198,12 +203,18 @@ const AddProduct = ({ productList, setProductList }) => {
             required
           />
           {fieldErrors.name && (
-            <p className="text-red-500">{fieldErrors.name}</p>
+            <p id="Invalid_Input" className="text-red-500">
+              {fieldErrors.name}
+            </p>
           )}
         </div>
         <div className="mb-4">
           <label htmlFor="price" className="block font-bold mb-1">
-            Price<span className="text-red-500"> *</span>
+            Price
+            <span id="Invalid_Input" className="text-red-500">
+              {" "}
+              *
+            </span>
           </label>
           <input
             type="number"
@@ -216,7 +227,9 @@ const AddProduct = ({ productList, setProductList }) => {
             required
           />
           {fieldErrors.price && (
-            <p className="text-red-500">{fieldErrors.price}</p>
+            <p id="Invalid_Input" className="text-red-500">
+              {fieldErrors.price}
+            </p>
           )}
         </div>
         <div className="mb-4">
@@ -253,7 +266,7 @@ const AddProduct = ({ productList, setProductList }) => {
               onChange={handleInputChange}
               required
             />
-            <span className="text-xs text-gray-500">
+            <span id="Invalid_Input" className="text-xs text-gray-500">
               Please enter the size in megabytes
             </span>
             {fieldErrors.size && (
