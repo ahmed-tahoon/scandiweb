@@ -22,7 +22,7 @@ const TopButtons = ({ selectedProducts, handleDeleteSelected }) => {
             <button
               id="delete-product-btn"
               onClick={handleDeleteSelected}
-              className="bg-gradient-to-r from-red-500 to-red-700 text-white font-bold py-2 px-4 rounded-md hover:from-red-700 hover:to-red-900 delete-checkbox"
+              className="bg-gradient-to-r from-red-500 to-red-700 text-white font-bold py-2 px-4 rounded-md hover:from-red-700 hover:to-red-900"
             >
               MASS DELETE
             </button>

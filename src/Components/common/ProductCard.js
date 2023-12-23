@@ -64,7 +64,7 @@ const ProductCard = ({ product, onToggleSelect, selectedProducts }) => {
               id={`delete-checkbox`}
               type="checkbox"
               value=""
-              className="w-6 h-6 text-red-600 bg-red-100 border-red-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              className="delete-checkbox w-6 h-6 text-red-600 bg-red-100 border-red-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               onChange={handleToggle}
             />
           </div>
