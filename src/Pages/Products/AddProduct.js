@@ -316,7 +316,7 @@ const AddProduct = ({ productList, setProductList }) => {
               <p id="Invalid_Input" className="text-red-500">{fieldErrors.weigheightht}</p>
             )}
             <label htmlFor="width" className="block font-bold mb-1">
-              Width<span  className="text-red-500"> *</span>
+              Width<span className="text-red-500"> *</span>
             </label>
             <input
               type="number"
@@ -332,7 +332,7 @@ const AddProduct = ({ productList, setProductList }) => {
               <p className="text-red-500">{fieldErrors.width}</p>
             )}
             <label htmlFor="length" className="block font-bold mb-1">
-              Length<span id="Invalid_Input" className="text-red-500"> *</span>
+              Length<span className="text-red-500"> *</span>
             </label>
             <input
               type="number"
@@ -348,7 +348,7 @@ const AddProduct = ({ productList, setProductList }) => {
               Please enter the dimensions in centimeters
             </span>
             {fieldErrors.length && (
-              <p id="Invalid_Input" className="text-red-500">{fieldErrors.length}</p>
+              <p className="text-red-500">{fieldErrors.length}</p>
             )}
           </div>
         )}
